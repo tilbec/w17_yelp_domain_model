@@ -18,7 +18,13 @@
       <dd><%= @restaurant.website %></dd>
 
       <dt>Tag</dt>
-      <dd><%= @restaurant.tag_id %></dd>
+      <dd>
+        <% if @restaurant.tag.present? %>
+          <a href="/tags/<%= @restaurant.tag_id %>">
+            <%= @restaurant.tag.tag_name %>
+          </a>
+        <% end %>
+      </dd>
 
     </dl>
 

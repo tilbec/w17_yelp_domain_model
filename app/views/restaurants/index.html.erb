@@ -23,7 +23,13 @@
         <td><%= restaurant.address %></td>
         <td><%= restaurant.cover_photo %></td>
         <td><%= restaurant.website %></td>
-        <td><%= restaurant.tag.tag_name %></td>
+        <td>
+          <% if restaurant.tag.present? %>
+            <a href="/tags/<%= restaurant.tag.id %>">
+              <%= restaurant.tag.tag_name %>
+            </a>
+          <% end %>
+        </td>
         <td>
           <a href="/restaurants/<%= restaurant.id %>" class="btn btn-primary">Show</a>
           <a href="/restaurants/<%= restaurant.id %>/edit" class="btn btn-warning">Edit</a>
