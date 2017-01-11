@@ -1,0 +1,1 @@
+{"name":"W17 Yelp Domain Model","repository":"https://github.com/tilbec/w17_yelp_domain_model","env":{"CLOUDINARY_CLOUD_NAME":{"required":true},"CLOUDINARY_API_KEY":{"required":true},"CLOUDINARY_API_SECRET":{"required":true},"ROLLBAR_ACCESS_TOKEN":{"required":true}}}
